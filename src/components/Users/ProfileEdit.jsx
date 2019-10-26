@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import '../../assets/stylesheets/index.css'
 
-class App extends Component {
+class UserProfileEdit extends Component {
   render() {
     return (
       <React.Fragment>
@@ -10,4 +11,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default UserProfileEdit

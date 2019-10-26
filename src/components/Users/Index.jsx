@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../assets/stylesheets/App.css';
+import '../../assets/stylesheets/index.css'
 
-class User extends Component {
+class UserIndex extends Component {
   render() {
     return (
       <React.Fragment>
@@ -11,4 +11,4 @@ class User extends Component {
   }
 }
 
-export default User
+export default UserIndex

@@ -5,7 +5,10 @@ import Contact from "../static/Cantact";
 import QA from "../static/QA";
 import Term from "../static/Term";
 import Privacy from "../static/Privacy";
-import User from "../components/User";
+import UserIndex from "../components/Users/Index";
+import UserEdit from "../components/Users/Edit";
+import UserProfileEdit from "../components/Users/ProfileEdit";
+import UserNotice from "../components/Users/Notice";
 
 class Root extends Component{
   render () {
@@ -20,7 +23,10 @@ class Root extends Component{
           <Route exact path="/term" component={Term} />
           <Route exact path="/privacy" component={Privacy} />
           {/* users */}
-          <Route path="/users/:unique_key" component={User} />
+          <Route path="/users/:unique_key" component={UserIndex} />
+          <Route path="/users/:unique_key/edit" component={UserEdit} />
+          <Route path="/users/:unique_key/notice" component={UserNotice} />
+          <Route path="/users/profile/:unique_key/edit" component={UserProfileEdit} />
         </Switch>
       </BrowserRouter>
     )
