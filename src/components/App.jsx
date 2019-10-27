@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { LoadingProgress, CircularIntegration } from "../lib/ui/LoadingProgress";
+import LoadingProgress from '../lib/ui/LoadingProgress'
+import CircularIntegration from '../lib/ui/CircularIntegration'
+import BoxProgress from "../lib/ui/BoxProgress";
 
 class App extends Component {
   render() {
@@ -8,6 +10,7 @@ class App extends Component {
         <h1>Hello React</h1>
         <LoadingProgress />
         <CircularIntegration />
+        <BoxProgress />
       </React.Fragment>
     );
   }
