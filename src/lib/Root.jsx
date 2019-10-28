@@ -9,6 +9,8 @@ import UserIndex from "../components/Users/Index";
 import UserEdit from "../components/Users/Edit";
 import UserProfileEdit from "../components/Users/ProfileEdit";
 import UserNotice from "../components/Users/Notice";
+import SignUp from "../components/Users/SignUp";
+import SignIn from "../components/Users/SignIn";
 
 class Root extends Component{
   render () {
@@ -23,6 +25,8 @@ class Root extends Component{
           <Route exact path="/term" component={Term} />
           <Route exact path="/privacy" component={Privacy} />
           {/* users */}
+          <Route path="/users/sign_up" component={SignUp} />
+          <Route path="/users/sign_in" component={SignIn} />
           <Route path="/users/:unique_key" component={UserIndex} />
           <Route path="/users/:unique_key/edit" component={UserEdit} />
           <Route path="/users/:unique_key/notice" component={UserNotice} />

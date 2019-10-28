@@ -1,5 +1,5 @@
 import {makeStyles} from "@material-ui/core";
-import {green} from "@material-ui/core/colors";
+import {green, blue} from "@material-ui/core/colors";
 import React from "react";
 import Fab from "@material-ui/core/Fab";
 import CheckIcon from "@material-ui/icons/Check";
@@ -22,6 +22,12 @@ const useStyles = makeStyles(theme => ({
       backgroundColor: green[700],
     },
   },
+  buttonDefault: {
+    backgroundColor: blue[500],
+    '&:hover': {
+      backgroundColor: blue[500],
+    }
+  },
   fabProgress: {
     color: green[500],
     position: 'absolute',
@@ -39,6 +45,7 @@ function CircularIntegration() {
 
   const buttonClassname = clsx({
     [classes.buttonSuccess]: success,
+    [classes.buttonDefault]: !success,
   });
 
   React.useEffect(() => {
