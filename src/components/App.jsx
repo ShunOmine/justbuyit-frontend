@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+// import { getItem } from "../actions/Items"
 
 class App extends Component {
   render() {
@@ -9,5 +10,8 @@ class App extends Component {
     );
   }
 }
+
+// const mapStateToProps = state => ({ items: state.items})
+// const mapDispatchToProps = ({ getItem })
 
 export default App
